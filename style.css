@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:110%;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    color: white;
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    margin: 0.5em;
+    border-radius:50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    margin-right:10px;
+}
+.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    width: cal(100% -100px);
+    font-size:105%;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    margin-bottom: -3px;
+}
+.description {
+    text-transform: capitalize;
+    margin-left:0px
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .search-bar{
+        width: 70px;
+    }
+    .container{
+        width: 200px;
+    }
+  }
